@@ -2,7 +2,15 @@
 body {
     background-color: #655E55;
     font-family: DM sans;
+
+    
+#sobre-mi img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    display: block;
 }
+
 .header {
    position: absolute;
    top: 0%;
@@ -15,6 +23,7 @@ body {
   }
   header {
     background-color:#655E55
+    
    }
 
 nav ul {
@@ -30,21 +39,76 @@ nav ul {
     text-decoration: none;
     color: #FDE9DF;
     font-weight: bold;
+    
 
   }
-  
+  #Servicios img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+  #terminos {
+    background-image: url('fondos bas.jpg'); 
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+#terminos .contenido {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 120px;
+    border-radius: 10px;
+    color: #333;
+}
+#politica {
+    background-image: url('fondos bas.jpg'); 
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    font-family: 'DM Sans', sans-serif;
+}
+#politica .contenido {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    color: #333;
+}
+#contacto h2,
+#contacto p {
+  color: white;
+}
+
 h2{
-    color: #FDE9DF;
+    color: #655F55;
 }
 p{
-    color: #FDE9DF;
+    color: #655F55;
 }
 label{
     color: #FDE9DF;
 }
 h1{
-    color: #655E55;
+    color: #655F55;
 }
 footer{
    text-align: center;
+   .footer-text {
+    color: white;
+  }
+  
 }
