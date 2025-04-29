@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 body {
-    background-color: #655E55;
+    background-color: #191919;
     font-family: DM sans;
 
+    nav ul li a {
+        color: #ede3d6;
+        text-decoration: none;
+        transition: color 0.5s ease; 
+      }
+      
+      nav ul li a:hover {
+        color: #e49d6c;
+      }
+      
     
 #sobre-mi img {
     width: 100%;
@@ -22,7 +32,7 @@ body {
    z-index: 1000;
   }
   header {
-    background-color:#655E55
+    background-color:#191919;
     
    }
 
@@ -48,7 +58,12 @@ nav ul {
     max-width: 100%;
     height: auto;
 }
-
+#testimonios img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
   #terminos {
     background-image: url('fondos bas.jpg'); 
     background-size: cover;
@@ -67,7 +82,7 @@ nav ul {
     margin: 0 auto;
     padding-top: 120px;
     border-radius: 10px;
-    color: #333;
+    color: #191919;
 }
 #politica {
     background-image: url('fondos bas.jpg'); 
@@ -86,7 +101,7 @@ nav ul {
     padding-top: 120px;
     padding-bottom: 20px;
     border-radius: 10px;
-    color: #333;
+    color: #191919;
 }
 #contacto h2,
 #contacto p {
@@ -94,16 +109,16 @@ nav ul {
 }
 
 h2{
-    color: #655F55;
+    color: #191919;
 }
 p{
-    color: #655F55;
+    color: #191919;
 }
 label{
     color: #FDE9DF;
 }
 h1{
-    color: #655F55;
+    color: #191919;
 }
 footer{
    text-align: center;
