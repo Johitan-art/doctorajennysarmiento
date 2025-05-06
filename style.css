@@ -13,48 +13,21 @@ body {
         color: #e49d6c;
       }
 
-      .slider-frame {
-        width: 1280px;
-          height: auto;
-        margin:50px auto 0;
-        overflow: hidden;
-      }
-      
-      .slider-frame ul {
-        display: flex;
-        padding: 0;
-        width: 300%;
-        
-        animation: slide 20s infinite alternate ease-in-out;
-      }
-      
-      .slider-frame li {
-        width: 100%;
-        list-style: none;
-      }
-      
-      .slider-frame img {
-        width: 100%;
-      }
-      
-      @keyframes slide {
-        0% {margin-left: 0;}
-        32% {margin-left: 0;}
-        
-        33% {margin-left: -100%;}
-        66% {margin-left: -100%;}
-        
-        67% {margin-left: -200%;}
-        100% {margin-left: -200%;}
-        
-        
-      }
+#logo img {
+margin-left: 30px;
+}
 
 #sobre-mi img {
     width: 100%;
-    height: 100%;
     object-fit: contain; 
     display: block;
+}
+#hola-jenny img {
+  margin-top: 50px;
+  width: 100%;
+  object-fit: contain; 
+    display: block;
+    margin-bottom: 10px;
 }
 
 .header {
@@ -83,17 +56,66 @@ nav ul {
   
   .header li a { 
     text-decoration: none;
-    color: #FDE9DF;
+    color: #ffffff;
     font-weight: bold;
-    
-
+  
   }
-  #Servicios img {
+  #serviciosbasicos img {
     display: block;
     margin: 0 auto;
     max-width: 100%;
     height: auto;
 }
+.serviciosadicionales {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.boton-contacto {
+  display: inline-block;
+  background-color: #e49d6c;
+  color: white;
+  padding: 11px 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: DM sans;
+  transition: background-color 0.8s ease;
+}
+
+.boton-contacto:hover {
+  background-color: #ffffff;
+  color: #191919;
+}
+
+}
+
+#toggle-servicios:checked ~ .serviciosadicionales {
+  display: block;
+}
+
+.btn-ver-mas {
+  display: inline-block;         
+  margin: 20px auto;       
+  background-color: #ffffff;
+  color: #191919;
+  padding: 11px 20px;
+  margin: 20px auto;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: background-color 0.8s ease;
+  text-align: center;
+}
+
+.btn-ver-mas:hover {
+  background-color: #e49d6c;
+  color: #ffffff;
+
+}
+
+
 #testimonios img {
     display: block;
     margin: 0 auto;
@@ -101,9 +123,9 @@ nav ul {
     height: auto;
 }
   #terminos {
-    background-image: url('fondos bas.jpg'); 
-    background-size: cover;
-    background-position: center;
+  background-image: url('fondos bas.jpg'); 
+    background-size:cover;
+    background-position: center
     width: 100vw;
     min-height: 100vh;
     position: relative;
@@ -121,13 +143,14 @@ nav ul {
     color: #191919;
 }
 #politica {
-    background-image: url('fondos bas.jpg'); 
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    min-height: 100vh;
-    position: relative;
-    font-family: 'DM Sans', sans-serif;
+  background-image: url('fondos bas.jpg'); 
+  background-size:cover;
+  background-position: center
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  font-family: 'DM Sans', sans-serif;
+
 }
 #politica .contenido {
     position: relative;
@@ -139,31 +162,76 @@ nav ul {
     border-radius: 10px;
     color: #191919;
 }
-#contacto h2,
-#contacto p {
 
-}
 #contacto {
-  margin-top: 140px; 
-  background-color: #fde9df;
+  margin-top: 100px; 
+  margin-bottom: 10px;
+  background-image: url('fondos bas.jpg');
+  background-size: cover;
+  height: 10%;
 }
-#contacto input,
-#contacto textarea {
-    background-color: #f08580;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    width: 70%;
-    margin-bottom: 15px;
-    font-family: DM sans;
+
+
+.contacto-contenedor {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
 }
-#contacto button {
-  background-color: #191919;
-  color: #fde9df;
-  padding: 10px 30px;
+
+.columna {
+  flex: 1;
+}
+
+.izquierda {
+  max-width: 50%;
+}
+
+.derecha {
+  max-width: 45%;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
   border: none;
   border-radius: 10px;
+  background-color: #F08580;
+  font-size: 15px;
+  
+
+}
+
+form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+form button {
+  background-color: #191919;
+  color: #fde9df;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
   cursor: pointer;
+  transition: all 0.8s ease;
+}
+form button:hover {
+  background-color: white;
+  color: #191919;
+  border: 1px solid #191919;
+
+iframe {
+  border-radius: 10px;
+  margin-top: 15px;
+  width: 100%;
+  height: 250px;
+}
+
 }
 h2{
     color: #191919;
@@ -181,10 +249,37 @@ h1{
     font-size: 30px;
 
 }
-footer{
-   text-align: center;
-   .footer-text {
-    color: white;
-  }
+footer {
+  background-color: #191919;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 0px;
+}
+
+.footer-text {
+  color: white;
+  margin-top: 10px;
+}
+
+
+
+footer a {
+  color: white;
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.1s;
+
   
+}
+
+footer a:hover {
+  color: #e49d6c;
+}
+footer a i {
+  transition: transform 0.2s ease, color 0.2s ease;
+  margin-top: 30px;
+}
+footer a:hover i {
+  transform: scale(1.4);
 }
