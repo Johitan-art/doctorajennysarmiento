@@ -10,9 +10,10 @@
 
 <body>
 
-    <!-- header -->
     <header class="header">
+      <section id=logo>
         <img src="logop.png" alt="logodrajenny">
+    </section>
         <nav>
             <ul>
                 <li><a href="index.html">Sobre mí</a></li>
@@ -23,36 +24,57 @@
                 <li><a href="politica.html">política y privacidad</a></li>
             </ul>
         </nav>
-        </div>
-        </div>
+      </div>
     </header>
     <section id="contacto">
-        <h2>Agenda tu cita</h2>
+        <div class="contacto-contenedor">
+      
+          <div class="columna izquierda">
+            <h2>Agenda tu cita</h2>
+            <p>Si tienes alguna duda ó quieres saber más<br> sobre mis servicios,  deja un mensaje por favor.</p>
+      
+            <form>
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+      
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+      
+              <label for="mensaje">Asunto/Mensaje/Tratamiento de interés</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Asunto/ Mensaje/ Tratamiento de interés" required></textarea>
+      
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+     
+          <div class="columna derecha">
+            <h2>Otros medios de contacto</h2>
+            <p><strong>Mi correo:</strong>  majemi243108@gmail.com</p>
+            <p><strong>Mi número:</strong> +57 318 900 4216</p>
+            <p><strong>Dirección:</strong> Cra. 13 #118–08, Stem Well Bogotá</p>
+      
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63622.69122694511!2d-74.039857!3d4.697178!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ab093c96367%3A0x75a977635ce6b120!2sStemwell%20Health%20-%20Regenerative%20Medicine!5e0!3m2!1ses!2sus!4v1746379999647!5m2!1ses!2sus"
+            width="100%" height="200"
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+      
 
-        <p>Si tienes alguna duda ó quieres saber
-            más sobre mis servicios, deja un
-            mensaje por favor.</p>
-        <h2>Otros medios de contacto</h2>
-
-        <p>Mi correo: majemi243108@gmail.com</p>
-        <p>Mi número +57 318 900 4216</p>
-        <p>Dirección: Cra. 13 #118-08, Stem Well</p>
-
-       <div class="formulario">
-  <form>
-
-    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-    <input type="email" id="correo" name="correo" placeholder="Correo" required>
-    <textarea id="mensaje" name="mensaje" placeholder="Asunto/Mensaje" required></textarea>
-
-    <button type="submit">Enviar</button>
-  </form>
-</div>
-
-        
-        <footer>
-            <p class="footer-text"> Doctora Jenny Sarmiento. | Todos los derechos reservados 2025</p>
-        </footer>
+            
+                <footer>
+            
+                    <a href="https://www.instagram.com/drajennysarmiento_?igsh=MWZ6YXF0eXJjcHAwZg==" target="_blank">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send/?phone=3189004216&text&type=phone_number&app_absent=0&wame_ctl=1&fbclid=PAQ0xDSwKE-wpleHRuA2FlbQIxMAABp_DWMDvGga6VOZzWX_hU-3_kJ05J2-U3uUWFRFSRZU7HUraZp-7vjnIQKXN__aem_n4CXmQ-hWlJcccaVuJmFrg" target="_blank">
+                      <i class="fab fa-whatsapp"></i>
+                    </a>
+                  
+                <p class="footer-text"> Doctora Jenny Sarmiento. | Todos los derechos reservados 2025</p>
+            </footer>
     </body>
     
     </html>
