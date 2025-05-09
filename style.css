@@ -19,6 +19,9 @@ body {
 margin-left: 30px;
 }
 
+
+
+
 .hero-text {
   position: absolute;
   top: 20%;
@@ -62,6 +65,42 @@ margin-left: 30px;
   display: block;
 }
 
+.hero-arrugas {
+  left: auto;
+  right: 16%;
+  text-align: left;
+  top: 35%;
+}
+.hero-manchas {
+  left: auto;
+  right: 20%;
+  text-align: left;
+  top: 105%;
+}
+.hero-acido {
+  left: auto;
+  right: 15%;
+  text-align: left;
+  top: 173%;
+}
+.hero-estrias {
+  left: auto;
+  right: 23%;
+  text-align: left;
+  top: 240%;
+}
+.hero-cicatrices {
+  left: auto;
+  right: 22%;
+  text-align: left;
+  top: 310%;
+}
+.hero-areola {
+  left: auto;
+  right: 20%;
+  text-align: left;
+  top: 378%;
+}
 
 
 .header {
@@ -107,14 +146,15 @@ nav ul {
 }
 
 .boton-contacto {
-  display: inline-block;
+  display: block;            
+  width: fit-content;       
+  margin: 20px auto;        
   background-color: #e49d6c;
   color: white;
   padding: 11px 20px;
-  margin-top: 20px;
   text-decoration: none;
   border-radius: 10px;
-  font-weight: DM sans;
+  font-family: 'DM Sans', sans-serif;
   transition: background-color 0.8s ease;
 }
 
@@ -124,41 +164,67 @@ nav ul {
 }
 
 
+.testimonio {
+  background-color: #ede3d6;
+  padding: 60px 20px;
+  font-family: 'DM Sans', sans-serif;
+}
+.andresfondo {
+  background-color: #eecbc9;
+  padding: 60px 20px;
+  font-family: 'DM Sans', sans-serif;
 }
 
-#toggle-servicios:checked ~ .serviciosadicionales {
-  display: block;
+.testimonio-contenido {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.btn-ver-mas {
-  display: inline-block;         
-  margin: 20px auto;       
-  background-color: #ffffff;
+blockquote {
+  font-size: 28px;
+  font-style: italic;
   color: #191919;
-  padding: 11px 20px;
-  margin: 20px auto;
-  cursor: pointer;
-  border-radius: 10px;
-  font-size: 16px;
-  transition: background-color 0.8s ease;
-  text-align: center;
-}
-
-.btn-ver-mas:hover {
-  background-color: #e49d6c;
-  color: #ffffff;
-
+  flex: 1;
+  line-height: 1.4;
+  margin-top: 80px;
 }
 
 
-#testimonios img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
+
+.persona {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #e49d6c;
 }
+
+.persona img {
+  width: 100px;
+  height: 100px;
+  border-radius: 30%;
+  object-fit: cover;
+}
+
+.persona h4 {
+  margin: 0;
+  font-size: 26px;
+  font-style: normal;
+}
+
+.persona p {
+  margin: 0;
+  font-size: 14px;
+  color: #191919;
+}
+
+
   #terminos {
-  background-image: url('fondos bas.jpg'); 
+  background-image: url('fondos bas.jpg');
     background-size:cover;
     background-position: center
     width: 100vw;
